@@ -280,9 +280,9 @@ require_once '../../includes/header.php';
                                                 <i class="ri-list-check"></i>
                                             </a>
                                             <?php if ($course['status'] == 'published'): ?>
-                                                <a href="<?= SITE_URL ?>/courses/<?= $course['slug'] ?>" target="_blank" class="text-purple-600 hover:text-purple-900" title="צפה בקורס">
-                                                    <i class="ri-eye-line"></i>
-                                                </a>
+                                                <a href="<?= SITE_URL ?>/instructor/courses/preview.php?id=<?= $course['course_id'] ?>" class="text-purple-600 hover:text-purple-900" title="צפה בקורס">
+    <i class="ri-eye-line"></i>
+</a>
                                             <?php endif; ?>
                                             <button type="button" class="text-red-600 hover:text-red-900 delete-course" data-id="<?= $course['course_id'] ?>" data-title="<?= $course['title'] ?>" title="מחק קורס">
                                                 <i class="ri-delete-bin-line"></i>
